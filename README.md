@@ -10,18 +10,23 @@ Setup (python 2.7):
 API:
 
 [GET]
+
 /commands -get all commands
 
 [POST, GET, DELETE]
+
 /commands/<name> -add/delete command or get existing
   
 [GET]
+
 /groups -get all groups
 
 [POST, GET, DELETE]
+
 /groups/<name> -create/remove group or get existing group
 
 [POST, DELETE]
+
 /groups/<name>/<command> -add/remove command from group
 
 
