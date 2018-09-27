@@ -4,6 +4,7 @@ Server api for controlling broadlink rm device.
 Setup (python 2.7):
 - create new virtual env
 - install dependencies from reqirements.txt
+- fill data in config.ini 
 - launch black_bean.sh script for server launch 
 
 
@@ -15,7 +16,7 @@ API:
 
 [POST, GET, DELETE]
 
-/commands/<name> -add/delete command or get existing
+/commands/|name| -add/delete command or get existing
   
 [GET]
 
@@ -23,7 +24,7 @@ API:
 
 [POST, GET, DELETE]
 
-/groups/<name> -create/remove group or get existing group
+/groups/|name| -create/remove group or get existing group
 
 [POST, DELETE]
 
