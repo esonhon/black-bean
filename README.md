@@ -27,7 +27,7 @@ API:
 
 [POST, DELETE]
 
-/groups/<name>/<command> -add/remove command from group
+/groups/|name|/|command| -add/remove command from group
 
 
 
