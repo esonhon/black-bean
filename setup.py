@@ -1,14 +1,12 @@
-import os
-import subprocess
+from setuptools import find_packages, setup
 
-try:
-    import flask
-except ImportError as e:
-    print(str(e))
-    exit(1)
-
-os.environ['FLASK_APP'] = "src/app"
-os.environ['FLASK_ENV'] = "dev"
-
-command = ['flask','run']
-subprocess.check_call(command)
+setup(
+    name='black_bean',
+    version='1.0.0',
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=[
+        'flask', 'pyaes', 'pyfunctional', 'apscheduler'
+    ],
+)

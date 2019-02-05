@@ -1,0 +1,2 @@
+graft black_bean/static
+global-exclude *.pyc
