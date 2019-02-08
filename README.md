@@ -1,11 +1,13 @@
 # black_bean
 Server api for controlling broadlink rm device.
+Based on https://github.com/mjg59/python-broadlink
 
-Setup (python 2.7):
+Setup (from .whl file):
 - create new virtual env
-- install dependencies from reqirements.txt
-- fill data in config.ini 
-- launch black_bean.sh script for server launch 
+- pip install waitress
+- waitress-serve --call 'black_bean:create_app'
+
+Server should launch on http://0.0.0.0:8080 by default
 
 
 API:
@@ -30,5 +32,9 @@ API:
 
 /groups/|name|/|command| -add/remove command from group
 
+
+Creating wheel file from source code:
+- pip install wheel
+- python setup.py bdist_wheel
 
 
