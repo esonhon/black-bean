@@ -47,3 +47,7 @@ def get_password(name):
 def get_configuration():
     name = get_ssid()
     return name, get_password(name), get_wpa(name)
+
+
+if __name__ == '__main__':
+    print(get_configuration())

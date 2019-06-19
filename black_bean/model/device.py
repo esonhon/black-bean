@@ -1,6 +1,6 @@
 import time
 
-from ..util import broadlink, wifi_connector
+from ..util import broadlink
 from ..util.logger import logged
 
 class Device:
