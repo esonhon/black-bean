@@ -1,4 +1,4 @@
-# black_bean
+# Black bean
 Server api for controlling broadlink rm device.
 Based on https://github.com/mjg59/python-broadlink
 
